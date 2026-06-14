@@ -1453,8 +1453,48 @@
       <div class="cta-section__eyebrow">GET STARTED</div>
       <h2 class="cta-section__heading">まず、数名で測ってみませんか。</h2>
       <p class="cta-section__lead">トライアル診断は少人数から始められます。資料請求・無料相談はこちらから。</p>
-      <a href="#" class="btn-gold">資料請求・無料相談</a>
+      <style>
+        .lead-form{max-width:540px;margin:0 auto;background:#fff;border-radius:14px;padding:30px 26px;box-shadow:0 8px 40px rgba(0,0,0,.22);text-align:left;}
+        .lead-form .row{margin-bottom:18px;}
+        .lead-form label{display:block;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:7px;}
+        .lead-form .rq{color:#B0432F;font-size:11px;margin-left:5px;}
+        .lead-form .op{color:var(--muted);font-size:11px;margin-left:5px;}
+        .lead-form input,.lead-form select,.lead-form textarea{width:100%;font-family:var(--font);font-size:15px;color:var(--text);border:1.5px solid var(--gray-line);border-radius:9px;padding:12px 13px;background:#fff;}
+        .lead-form input:focus,.lead-form select:focus,.lead-form textarea:focus{outline:none;border-color:var(--gold);}
+        .lead-form textarea{min-height:90px;resize:vertical;line-height:1.7;}
+        .lead-form .consent{display:flex;gap:9px;align-items:flex-start;font-size:12.5px;color:var(--muted);line-height:1.7;}
+        .lead-form .consent input{width:17px;height:17px;margin-top:3px;flex:0 0 auto;accent-color:var(--navy);}
+        .lead-form .consent a{color:var(--navy);}
+        .lead-form .submit{width:100%;margin-top:6px;border:none;cursor:pointer;}
+        .cta-line{margin-top:24px;}
+        .cta-line__lead{font-size:13px;color:rgba(255,255,255,0.72);margin-bottom:11px;}
+        .cta-line__btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#06C755;color:#fff;padding:13px 28px;border-radius:99px;font-size:15px;font-weight:700;text-decoration:none;box-shadow:0 4px 14px rgba(6,199,85,.32);}
+      </style>
+      <form name="biz-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="lead-form">
+        <input type="hidden" name="form-name" value="biz-contact" />
+        <p hidden><label>記入しないでください: <input name="bot-field" /></label></p>
+        <div class="row"><label>会社名<span class="rq">必須</span></label><input type="text" name="会社名" required placeholder="株式会社〇〇" /></div>
+        <div class="row"><label>ご担当者名<span class="rq">必須</span></label><input type="text" name="ご担当者名" required placeholder="営業 太郎" autocomplete="name" /></div>
+        <div class="row"><label>メールアドレス<span class="rq">必須</span></label><input type="email" name="メールアドレス" required placeholder="you@company.co.jp" autocomplete="email" /></div>
+        <div class="row"><label>電話番号<span class="op">任意</span></label><input type="tel" name="電話番号" placeholder="03-1234-5678" autocomplete="tel" /></div>
+        <div class="row"><label>対象人数の規模<span class="op">任意</span></label>
+          <select name="対象人数の規模">
+            <option value="">選択してください</option>
+            <option>1〜5名</option><option>6〜20名</option><option>21〜50名</option><option>51名以上</option>
+          </select>
+        </div>
+        <div class="row"><label>ご相談内容<span class="op">任意</span></label><textarea name="ご相談内容" placeholder="導入検討の背景、課題、ご希望などを自由にご記入ください。"></textarea></div>
+        <div class="row"><label class="consent"><input type="checkbox" name="プライバシー同意" value="同意する" required /><span><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意のうえ送信します。</span></label></div>
+        <button type="submit" class="btn-gold submit">資料請求・無料相談を送信する</button>
+      </form>
       <p class="cta-section__note">担当者より2営業日以内にご連絡します</p>
+      <div class="cta-line">
+        <div class="cta-line__lead">すぐに相談したい方は、公式LINEからどうぞ。</div>
+        <a class="cta-line__btn" href="https://lin.ee/QVKHSTm" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.3c-5.52 0-10 3.62-10 8.08 0 3.99 3.55 7.33 8.35 7.97.32.07.77.21.88.49.1.25.07.64.03.89l-.14.84c-.04.25-.2 1 .88.54 1.07-.45 5.78-3.4 7.89-5.83C21.27 13.6 22 12.04 22 10.38 22 5.92 17.52 2.3 12 2.3zM8.13 12.6H6.2a.4.4 0 0 1-.4-.4V8.93a.4.4 0 0 1 .81 0v2.86h1.52a.4.4 0 0 1 0 .81zm1.5-.4a.4.4 0 0 1-.81 0V8.93a.4.4 0 0 1 .81 0v3.27zm3.93 0a.4.4 0 0 1-.28.38.4.4 0 0 1-.45-.15l-1.68-2.29v2.06a.4.4 0 0 1-.81 0V8.93a.4.4 0 0 1 .73-.23l1.68 2.29V8.93a.4.4 0 0 1 .81 0v3.27zm2.86-2.04a.4.4 0 0 1 0 .81h-1.13v.82h1.13a.4.4 0 0 1 0 .81h-1.53a.4.4 0 0 1-.4-.4V8.93a.4.4 0 0 1 .4-.4h1.53a.4.4 0 0 1 0 .81h-1.13v.82h1.13z"/></svg>
+          公式LINEで相談する
+        </a>
+      </div>
     </div>
   </section>
 
