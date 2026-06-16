@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-78BMJKVD5E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-78BMJKVD5E');
+</script>
   <meta charset="UTF-8">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/icon-192.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MOTE LAB for Business — 営業の「選ばれる力」を数字にする</title>
   <meta name="description" content="MOTE LAB for Business は、営業の「選ばれる力」を59の行動に分解して測定する研修プログラム。研修前後の変化が、そのまま経営への報告資料になる。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://biz.mote-lab.group/">
+  <meta property="og:title" content="MOTE LAB for Business — 営業の「選ばれる力」を数字にする">
+  <meta property="og:description" content="営業の「選ばれる力」を59の行動に分解して測定する研修プログラム。研修前後の変化が、そのまま経営への報告資料になる。">
+  <meta property="og:image" content="https://biz.mote-lab.group/images/b2b-hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MOTE LAB for Business — 営業の「選ばれる力」を数字にする">
+  <meta name="twitter:description" content="営業の「選ばれる力」を59の行動に分解して測定する研修プログラム。研修前後の変化が、そのまま経営への報告資料になる。">
+  <meta name="twitter:image" content="https://biz.mote-lab.group/images/b2b-hero.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -1011,6 +1031,23 @@
       .sticky-bar { gap: 12px; }
       .sticky-bar__text { font-size: 12px; }
     }
+
+    /* ---- Lead form ---- */
+    .lead-form{max-width:540px;margin:0 auto;background:#fff;border-radius:14px;padding:30px 26px;box-shadow:0 8px 40px rgba(0,0,0,.22);text-align:left;}
+    .lead-form .row{margin-bottom:18px;}
+    .lead-form label{display:block;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:7px;}
+    .lead-form .rq{color:#B0432F;font-size:11px;margin-left:5px;}
+    .lead-form .op{color:var(--muted);font-size:11px;margin-left:5px;}
+    .lead-form input,.lead-form select,.lead-form textarea{width:100%;font-family:var(--font);font-size:15px;color:var(--text);border:1.5px solid var(--gray-line);border-radius:9px;padding:12px 13px;background:#fff;}
+    .lead-form input:focus,.lead-form select:focus,.lead-form textarea:focus{outline:none;border-color:var(--gold);}
+    .lead-form textarea{min-height:90px;resize:vertical;line-height:1.7;}
+    .lead-form .consent{display:flex;gap:9px;align-items:flex-start;font-size:12.5px;color:var(--muted);line-height:1.7;}
+    .lead-form .consent input{width:17px;height:17px;margin-top:3px;flex:0 0 auto;accent-color:var(--navy);}
+    .lead-form .consent a{color:var(--navy);}
+    .lead-form .submit{width:100%;margin-top:6px;border:none;cursor:pointer;}
+    .cta-line{margin-top:24px;}
+    .cta-line__lead{font-size:13px;color:rgba(255,255,255,0.72);margin-bottom:11px;}
+    .cta-line__btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#06C755;color:#fff;padding:13px 28px;border-radius:99px;font-size:15px;font-weight:700;text-decoration:none;box-shadow:0 4px 14px rgba(6,199,85,.32);}
   </style>
 </head>
 <body>
@@ -1453,23 +1490,6 @@
       <div class="cta-section__eyebrow">GET STARTED</div>
       <h2 class="cta-section__heading">まず、数名で測ってみませんか。</h2>
       <p class="cta-section__lead">トライアル診断は少人数から始められます。資料請求・無料相談はこちらから。</p>
-      <style>
-        .lead-form{max-width:540px;margin:0 auto;background:#fff;border-radius:14px;padding:30px 26px;box-shadow:0 8px 40px rgba(0,0,0,.22);text-align:left;}
-        .lead-form .row{margin-bottom:18px;}
-        .lead-form label{display:block;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:7px;}
-        .lead-form .rq{color:#B0432F;font-size:11px;margin-left:5px;}
-        .lead-form .op{color:var(--muted);font-size:11px;margin-left:5px;}
-        .lead-form input,.lead-form select,.lead-form textarea{width:100%;font-family:var(--font);font-size:15px;color:var(--text);border:1.5px solid var(--gray-line);border-radius:9px;padding:12px 13px;background:#fff;}
-        .lead-form input:focus,.lead-form select:focus,.lead-form textarea:focus{outline:none;border-color:var(--gold);}
-        .lead-form textarea{min-height:90px;resize:vertical;line-height:1.7;}
-        .lead-form .consent{display:flex;gap:9px;align-items:flex-start;font-size:12.5px;color:var(--muted);line-height:1.7;}
-        .lead-form .consent input{width:17px;height:17px;margin-top:3px;flex:0 0 auto;accent-color:var(--navy);}
-        .lead-form .consent a{color:var(--navy);}
-        .lead-form .submit{width:100%;margin-top:6px;border:none;cursor:pointer;}
-        .cta-line{margin-top:24px;}
-        .cta-line__lead{font-size:13px;color:rgba(255,255,255,0.72);margin-bottom:11px;}
-        .cta-line__btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#06C755;color:#fff;padding:13px 28px;border-radius:99px;font-size:15px;font-weight:700;text-decoration:none;box-shadow:0 4px 14px rgba(6,199,85,.32);}
-      </style>
       <form name="biz-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="lead-form">
         <input type="hidden" name="form-name" value="biz-contact" />
         <p hidden><label>記入しないでください: <input name="bot-field" /></label></p>
@@ -1505,14 +1525,14 @@
     <div class="footer__inner">
       <div class="footer__brand">
         MOTE LAB for Business
-        <small>株式会社MoteLab</small>
+        <small>株式会社MoteLab（設立準備中）</small>
       </div>
       <div class="footer__links">
         <a href="https://hp.mote-lab.group" target="_blank" rel="noopener">個人向けサイト</a>
         <a href="privacy.html">プライバシーポリシー</a>
         <a href="tokushoho.html">特定商取引法に基づく表記</a>
       </div>
-      <div class="footer__copy">&copy; 2026 株式会社MoteLab. All rights reserved.</div>
+      <div class="footer__copy">&copy; 2026 株式会社MoteLab（設立準備中）. All rights reserved.</div>
     </div>
   </footer>
 
